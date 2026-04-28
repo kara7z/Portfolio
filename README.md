@@ -27,6 +27,7 @@ I am a results-driven Full Stack Developer proudly trained at **YouCode — UM6P
 ![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=flat&logo=laravel&logoColor=white)
 ![PHP](https://img.shields.io/badge/PHP-777BB4?style=flat&logo=php&logoColor=white)
 ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white)
+![Twig](https://img.shields.io/badge/Twig-000000?style=flat&logo=twig&logoColor=white)
 
 ### Tools & DevOps
 ![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)
@@ -99,7 +100,7 @@ Scroll-triggered animations, parallax star fields, and a cinematic cosmic aesthe
 
 Supports multi-role user access, a rich text editor, post scheduling, category management, and a complete admin dashboard for content control.
 
-`Laravel` `PHP` `HTML` `CSS` `MySQL`
+`Laravel` `PHP` `HTML` `CSS` `MySQL` `Twig`
 
 ---
 

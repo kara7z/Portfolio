@@ -1,5 +1,5 @@
 <template>
-  <section id="experience" class="py-24 bg-[#09090b] transition-colors duration-500 relative overflow-hidden">
+  <section id="experience" class="py-24 bg-gray-50 dark:bg-[#09090b] transition-colors duration-500 relative overflow-hidden">
     
     <!-- Background texture -->
     <div class="absolute inset-0 pointer-events-none">
@@ -14,7 +14,7 @@
       <div class="flex flex-col md:flex-row md:items-end md:justify-between mb-20" v-fade-in>
         <div>
           <p class="text-brand-blue text-sm font-semibold uppercase tracking-[0.2em] mb-3">Career Path</p>
-          <h2 class="text-5xl md:text-6xl font-black text-white tracking-tight leading-none">
+          <h2 class="text-5xl md:text-6xl font-black text-gray-900 dark:text-white tracking-tight leading-none">
             My <span class="gradient-text">Journey</span>
           </h2>
         </div>
@@ -36,18 +36,18 @@
               <div class="w-12 h-12 rounded-2xl flex items-center justify-center shrink-0 border transition-all duration-500 z-10"
                    :class="item.active 
                      ? 'bg-brand-blue border-brand-blue shadow-lg shadow-brand-blue/40' 
-                     : 'bg-zinc-900 border-zinc-700 group-hover:border-brand-blue/50'">
-                <span v-html="item.icon" :class="item.active ? 'text-black' : 'text-zinc-400 group-hover:text-brand-blue transition-colors'"></span>
+                     : 'bg-white dark:bg-zinc-900 border-gray-200 dark:border-zinc-700 group-hover:border-brand-blue/50'">
+                <span v-html="item.icon" :class="item.active ? 'text-black' : 'text-gray-400 dark:text-zinc-400 group-hover:text-brand-blue transition-colors'"></span>
               </div>
               <div v-if="i < timeline.length - 1" class="w-px flex-1 mt-2 mb-2 min-h-[3rem]"
-                   :class="item.active ? 'bg-gradient-to-b from-brand-blue/60 to-transparent' : 'bg-zinc-800'"></div>
+                   :class="item.active ? 'bg-gradient-to-b from-brand-blue/60 to-transparent' : 'bg-gray-200 dark:bg-zinc-800'"></div>
             </div>
 
             <!-- Content -->
             <div class="pb-10 flex-1">
               <div class="flex flex-wrap items-center gap-3 mb-3">
                 <span class="text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full"
-                      :class="item.active ? 'bg-brand-blue/15 text-brand-blue border border-brand-blue/30' : 'bg-zinc-800 text-zinc-500 border border-zinc-700'">
+                      :class="item.active ? 'bg-brand-blue/15 text-brand-blue border border-brand-blue/30' : 'bg-gray-100 dark:bg-zinc-800 text-gray-500 dark:text-zinc-500 border border-gray-200 dark:border-zinc-700'">
                   {{ item.year }}
                 </span>
                 <span v-if="item.active" class="flex items-center gap-1.5 text-xs text-green-400 font-medium">
@@ -56,14 +56,14 @@
                 </span>
               </div>
 
-              <h3 class="text-xl font-bold text-white mb-1 group-hover:text-brand-blue transition-colors duration-300">{{ item.title }}</h3>
+              <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-1 group-hover:text-brand-blue transition-colors duration-300">{{ item.title }}</h3>
               <p class="text-brand-blue/80 text-sm font-semibold mb-4">{{ item.org }}</p>
               <p class="text-gray-400 text-sm leading-relaxed mb-5">{{ item.description }}</p>
 
               <!-- Tags -->
               <div class="flex flex-wrap gap-2">
                 <span v-for="tag in item.tags" :key="tag"
-                      class="text-xs font-medium px-3 py-1 rounded-lg bg-zinc-900 border border-zinc-800 text-zinc-400 group-hover:border-zinc-700 transition-colors">
+                      class="text-xs font-medium px-3 py-1 rounded-lg bg-white dark:bg-zinc-900 border border-gray-200 dark:border-zinc-800 text-gray-500 dark:text-zinc-400 group-hover:border-gray-300 dark:group-hover:border-zinc-700 transition-colors">
                   {{ tag }}
                 </span>
               </div>
@@ -98,18 +98,18 @@
           <!-- Stats Grid -->
           <div class="grid grid-cols-2 gap-4">
             <div v-for="stat in stats" :key="stat.label"
-                 class="rounded-2xl bg-zinc-900 border border-zinc-800 p-6 flex flex-col justify-between group hover:border-brand-blue/40 transition-all duration-300">
-              <span class="text-3xl font-black text-white">{{ stat.value }}<span class="text-brand-blue">{{ stat.suffix }}</span></span>
-              <span class="text-xs text-zinc-500 font-medium mt-2 leading-tight">{{ stat.label }}</span>
+                 class="rounded-2xl bg-white dark:bg-zinc-900 border border-gray-200 dark:border-zinc-800 p-6 flex flex-col justify-between group hover:border-brand-blue/40 transition-all duration-300">
+              <span class="text-3xl font-black text-gray-900 dark:text-white">{{ stat.value }}<span class="text-brand-blue">{{ stat.suffix }}</span></span>
+              <span class="text-xs text-gray-500 dark:text-zinc-500 font-medium mt-2 leading-tight">{{ stat.label }}</span>
             </div>
           </div>
 
           <!-- Core Skills -->
-          <div class="rounded-3xl bg-zinc-900 border border-zinc-800 p-6">
-            <p class="text-zinc-500 text-xs font-bold uppercase tracking-wider mb-4">Core Stack</p>
+          <div class="rounded-3xl bg-white dark:bg-zinc-900 border border-gray-200 dark:border-zinc-800 p-6">
+            <p class="text-gray-500 dark:text-zinc-500 text-xs font-bold uppercase tracking-wider mb-4">Core Stack</p>
             <div class="flex flex-wrap gap-2">
               <span v-for="tech in coreStack" :key="tech"
-                    class="text-xs font-semibold px-3 py-2 bg-zinc-800 border border-zinc-700 text-zinc-300 rounded-xl hover:border-brand-blue/50 hover:text-brand-blue transition-all duration-200 cursor-default">
+                    class="text-xs font-semibold px-3 py-2 bg-gray-50 dark:bg-zinc-800 border border-gray-200 dark:border-zinc-700 text-gray-700 dark:text-zinc-300 rounded-xl hover:border-brand-blue/50 hover:text-brand-blue transition-all duration-200 cursor-default">
                 {{ tech }}
               </span>
             </div>

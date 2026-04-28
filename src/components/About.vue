@@ -49,13 +49,13 @@
         </div>
 
         <!-- Box 5: Experience Stat -->
-        <div class="md:col-span-2 rounded-[2rem] bg-gray-900 dark:bg-white/5 border border-zinc-800 dark:border-white/10 p-8 flex items-center justify-between group overflow-hidden relative">
+        <div class="md:col-span-2 rounded-[2rem] bg-white dark:bg-white/5 border border-gray-200 dark:border-white/10 p-8 flex items-center justify-between group overflow-hidden relative shadow-sm hover:shadow-md transition-shadow duration-300">
           <div class="absolute inset-0 bg-brand-blue/10 translate-y-full group-hover:translate-y-0 transition-transform duration-500 rounded-[2rem]"></div>
           <div class="relative z-10">
-            <h3 class="text-5xl md:text-6xl font-black text-white">2<span class="text-brand-blue">+</span></h3>
-            <p class="text-lg text-gray-400 mt-2 font-medium">Years of Hands-on<br/>Project Experience</p>
+            <h3 class="text-5xl md:text-6xl font-black text-gray-900 dark:text-white">2<span class="text-brand-blue">+</span></h3>
+            <p class="text-lg text-gray-500 dark:text-gray-400 mt-2 font-medium">Years of Hands-on<br/>Project Experience</p>
           </div>
-          <div class="relative z-10 w-16 h-16 rounded-full bg-white/10 border border-white/20 flex items-center justify-center">
+          <div class="relative z-10 w-16 h-16 rounded-full bg-gray-50 dark:bg-white/10 border border-gray-200 dark:border-white/20 flex items-center justify-center">
             <svg class="w-8 h-8 text-brand-blue" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
             </svg>

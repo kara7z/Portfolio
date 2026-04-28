@@ -33,7 +33,7 @@
             <div class="absolute top-6 left-6 w-12 h-12 rounded-2xl bg-white/10 backdrop-blur-md flex items-center justify-center text-white border border-white/20 shadow-xl" v-html="project.icon"></div>
             
             <span class="absolute top-6 right-6 inline-flex items-center px-4 py-1.5 rounded-full text-xs font-bold tracking-wide uppercase backdrop-blur-md border shadow-lg"
-                  :class="project.featured ? 'bg-brand-blue text-black border-brand-blue/50' : 'bg-zinc-900/60 text-gray-100 border-zinc-600/50'">
+                  :class="project.featured ? 'bg-brand-blue text-black border-brand-blue/50' : 'bg-white/90 dark:bg-zinc-900/60 text-gray-900 dark:text-gray-100 border-gray-200 dark:border-zinc-600/50'">
               {{ project.badge }}
             </span>
           </div>
@@ -141,7 +141,7 @@ const projects = ref([
     image: '/images/blogcms.png',
     icon: `<svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" /></svg>`,
     description: 'A full-featured CMS built for digital publishers and bloggers. Supports multi-role user access, a rich text editor, post scheduling, category management, and a complete admin dashboard for content control.',
-    tech: ['Laravel', 'PHP', 'HTML', 'CSS', 'MySQL'],
+    tech: ['Laravel', 'PHP', 'HTML', 'CSS', 'MySQL', 'Twig'],
     github: 'https://github.com/kara7z/BlogCMS-website'
   }
 ]);
